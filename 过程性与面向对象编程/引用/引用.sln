@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "引用", "引用\引用.vcxproj", "{7DBE8750-86FF-4ED1-BBC2-2FB5EBD936CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DBE8750-86FF-4ED1-BBC2-2FB5EBD936CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7DBE8750-86FF-4ED1-BBC2-2FB5EBD936CC}.Debug|Win32.Build.0 = Debug|Win32
+		{7DBE8750-86FF-4ED1-BBC2-2FB5EBD936CC}.Release|Win32.ActiveCfg = Release|Win32
+		{7DBE8750-86FF-4ED1-BBC2-2FB5EBD936CC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

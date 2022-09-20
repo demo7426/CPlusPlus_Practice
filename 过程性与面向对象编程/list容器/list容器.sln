@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "list容器", "list容器\list容器.vcxproj", "{A582EF32-52E6-408B-8D8C-EE6A8741F299}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A582EF32-52E6-408B-8D8C-EE6A8741F299}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A582EF32-52E6-408B-8D8C-EE6A8741F299}.Debug|Win32.Build.0 = Debug|Win32
+		{A582EF32-52E6-408B-8D8C-EE6A8741F299}.Release|Win32.ActiveCfg = Release|Win32
+		{A582EF32-52E6-408B-8D8C-EE6A8741F299}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
