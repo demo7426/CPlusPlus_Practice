@@ -1,0 +1,220 @@
+//#include<iostream>
+//#include<thread>
+//
+//using namespace std;
+//
+////在利用类对象创建线程时，尽量不要用引用和指针传递，因为不知道进程什么时候结束（结束时清除局部变量），可能会导致中断
+//class Person
+//{
+//public:
+//	int &m_a;
+//	Person(int &ta):m_a(ta)
+//	{};
+//	~Person() {};
+//	void operator()()//仿函数
+//	{
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//		cout << "1：线程创建成功！" << m_a << endl;
+//		cout << "2：线程创建成功！" << m_a << endl;
+//		cout << "3：线程创建成功！" << m_a << endl;
+//		cout << "4：线程创建成功！" << m_a << endl;
+//		cout << "5：线程创建成功！" << m_a << endl;
+//		cout << "6：线程创建成功！" << m_a << endl;
+//		cout << "7：线程创建成功！" << m_a << endl;
+//		cout << "8：线程创建成功！" << m_a << endl;
+//		cout << "9：线程创建成功！" << m_a << endl;
+//		cout << "10：线程创建成功！" << m_a << endl;
+//	}
+//private:
+//
+//};
+//
+//int main()
+//{
+//	int ma =10;
+//	Person msFirst(ma);
+//	thread mth(msFirst);//拷贝了一个msFirst，所以进程结束，线程依旧可以运行
+//	mth.detach();
+//
+//	cout << "1：主线程的创建！" << endl;
+//	cout << "2：主线程的创建！" << endl;
+//	cout << "3：主线程的创建！" << endl;
+//	cout << "4：主线程的创建！" << endl;  
+//	cout << "5：主线程的创建！" << endl;
+//	cout << "6：主线程的创建！" << endl;
+//	cout << "7：主线程的创建！" << endl;
+//	cout << "8：主线程的创建！" << endl;
+//	cout << "9：主线程的创建！" << endl;
+//	cout << "10：主线程的创建！" << endl;
+//	
+//	return 0;
+//}
